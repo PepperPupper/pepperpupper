@@ -24,15 +24,17 @@ p {
 }
 
 /****************************CLASS SELECTORS*************************/
-.container {
-  position: relative;
-  top: 650px;
+.content-container {
+  /*caused strange alignment:*/
+  /* position: relative; */
+  bottom: 650px;
 }
 
 .top-container {
   text-align: center;
   width: 100%;
-  position: absolute;
+  /*caused strange alignment:*/
+  /* position: absolute; */
   background-color: #cceabb;
   margin-left: 0;
   margin-right: 0;
