@@ -1,105 +1,144 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Jil Rataj</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Merriweather:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
-  </head>
-  <body>
+/****************************TAG SELECTORS*************************/
+body {
+  background-color: #fdcb9e;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
 
-  <div class="top-container">
-    <div class="cloud1">
-      <img src="images/cloud.png" alt="cloud-img">
-    </div>
-    <div class="text">
-      <h1>I'm Jil.</h1>
-      <p>a <span class="pro">pro</span>grammer.</p>
-    </div>
-    <div class="cloud2">
-      <img src="images/cloud.png" alt="cloud-img2">
-    </div>
-    <div class="cloud3">
-      <img src="images/cloud.png" alt="cloud-img3">
-    </div>
-    <div class="mountain">
-      <img src="images/mountain.png" alt="mountain-img">
-    </div>
-  </div>
+h1 {
 
-  <div class="content-container">
-    <div class="light">
-    </div>
-    <div class="profile">
-      <img src="" alt="">
-      <!--Icons made by <a href="https://www.flaticon.com/authors/freepik"
-      title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
-      title="Flaticon"> www.flaticon.com</a>-->
-      <h2>Hello.</h2>
-      <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor
-        urna. Non auctor, montes nulla distinctio.</p>
-    </div>
-    <div class="middle">
-    </div>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <table>
-        <tr>
-          <!--table 1-->
-        <td>
-          <table cellspacing="5">
-              <tr>
-                <td>Java programming</td>
-                <td>⭐⭐</td>
-              </tr>
-              <tr>
-                <td>Building stuff</td>
-                <td>⭐⭐⭐⭐</td>
-              </tr>
-              <tr>
-                <td>C programming</td>
-                <td>⭐</td>
-              </tr>
-            </table>
-          </td>
-          <td>
-            <!--table 2-->
-            <table cellspacing="5">
-              <tr>
-                <td>languages</td>
-                <td>⭐⭐⭐</td>
-              </tr>
-              <tr>
-                <td>Sailing</td>
-                <td>⭐⭐⭐⭐</td>
-              </tr>
-              <tr>
-                <td>Riding Horses</td>
-                <td>⭐⭐⭐⭐⭐</td>
-              </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-        <hr>
-    </div>
-    <div class="dark">
-    </div>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-      <p>Lorem ipsum dolor sit amet, in quis, aenean amet.
-        Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-    </div>
-    <div class="bottom-container">
-      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-      <a class="footer-link" href="https://twitter.com/">Twitter</a>
-      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-      <p>© 2020 Jil Rataj.</p>
-    </div>
-  </div>
-  <hr>
-  </body>
-</html>
+  color: #66BFBF;
+  font-size:5.625rem;
+  margin-top: 50px auto 0 auto;
+  /* color: #3f3f44; */
+  font-family: 'Nunito', sans-serif;
+}
+
+h2 {
+  color: #66BFBF;
+  font-family: 'Amatic SC', cursive;
+  font-size:2.5rem;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Amatic SC', cursive;
+}
+
+p {
+  color: #3f3f44;
+  line-height: 2;
+}
+
+a {
+  color: #11999E;
+}
+
+/****************************CLASS SELECTORS*************************/
+.content-container {
+  /*caused strange alignment:*/
+    /* position: relative; */
+  /*not neccessary:*/
+    /* bottom: 650px; */
+    /* width: 100%; */
+}
+
+.top-container {
+  text-align: center;
+  /* width: 100%; */
+  /*caused strange alignment:*/
+  /* position: absolute; */
+  background-color: #cceabb;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mountain {
+  position: relative;
+  left: 0;
+}
+
+.cloud1 {
+  position: relative;
+  top: 20px;
+}
+
+.cloud2 {
+  position: relative;
+  left: -30%;
+  top: 70px;
+}
+
+.cloud3 {
+  position: relative;
+  left: 30%;
+  top: 140px;
+}
+
+.contact-me {
+  /* margin-left: 10px; */
+  width: 50%;
+  margin: 230px auto 100px auto;
+}
+
+.erisabesu-img {
+  text-align: center;
+  width: 100%;
+}
+
+.text {
+  /* line-height: 2; */
+  background-color: #cceabb;
+  /* margin-left: 0;
+  margin-right: 0; */
+  padding: 20px;
+  /* position: relative; */
+  top: 100px;
+  margin: auto;
+}
+
+.light {
+  background-color: #f7f7f7;
+  /* width: 100%; */
+  height: 100px;
+  position: relative;
+  margin-bottom:5px;
+}
+
+.middle {
+  background-color: #D9CCD1;
+  /* width: 100%; */
+  height: 100px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom:5px;
+}
+
+.dark {
+  background-color: #3f3f44;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  margin-top: 5px;
+  margin-bottom:5px;
+}
+
+.pro {
+  font-weight: bold;
+}
+
+.profile {
+  /* margin-left: 10px; */
+  width: 50%;
+  margin: 100px auto 100px auto;
+}
+
+.skills {
+  width: 50%;
+  /* margin-left: 10px; */
+  margin: 100px auto 100px auto;
+}
+
+.bottom-container {
+  margin-left: 10px;
+}
